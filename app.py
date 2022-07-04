@@ -8,19 +8,11 @@ from dash import Dash, dcc, html, Input, Output
 import pycountry_convert as pc
 
 
-server = Flask(__name__)
-app = Dash(__name__, server=server)
 
 # assume you have a "long-form" data frame
 # see https://plotly.com/python/px-arguments/ for more options
 
  ## ./greatProject/godsearch/1.txt
-
-
-path = os.path.realpath(os.curdir)#获取当前目录的绝对路径
-
-path = os.path.join(path, "nz_weather.csv")#加上文件名
-data = pd.read_csv(path)
 
 
 server = Flask(__name__)
